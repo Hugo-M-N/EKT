@@ -1,0 +1,96 @@
+:root {   
+    --colorPrincipal: green;
+    --colorSecundario: white;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    background-color: darkgray;
+}
+
+.banner {
+    position: relative;
+    display: inline-block;
+}
+
+.banner_img {
+    width: 100%;
+}
+
+.texto_header, .subtexto_header {
+    position: absolute;
+    text-align: center;
+    color: var(--colorSecundario);
+    font-size: 10rem;
+
+    top: 5rem;
+    left: 40%;
+}
+
+.subtexto_header {
+    font-size: 1.5rem;
+    top: 15rem;
+    left: 44%;
+}
+
+.menu {
+    background-color: var(--colorPrincipal);
+    margin: 0;
+}
+
+.menu ul {
+    margin: 0 auto;
+    display: inline;
+    text-align: center;
+    list-style: none;
+}
+
+.menu ul li {
+    padding: 2rem;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    margin: 0;
+    padding: 1.5rem;
+    color: var(--colorSecundario);
+    font-size: 3rem;
+}
+
+.menu ul li a:hover {
+    background-color: var(--colorSecundario);
+    border-radius: 1rem;
+    color: var(--colorPrincipal);
+}
+
+.destacado {
+    text-align: center;
+}
+
+.destacado_texto {
+    color: var(--colorPrincipal);
+    font-size: 4rem;
+}
+
+.destacado_boton {
+    margin: 3rem;
+}
+
+.destacado_boton a {
+    text-decoration: none;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    background-color: var(--colorPrincipal);
+    color: var(--colorSecundario);
+    font-size: 3rem;
+}
+
+.destacado_boton a:hover {
+    color: var(--colorPrincipal);
+    background-color: var(--colorSecundario);
+}
