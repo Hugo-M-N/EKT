@@ -18,8 +18,9 @@
 <div class="barra">
     <div class="barra__contenido">
         <nav class="navegacion">
-            <a href="/" class="navegacion__enlace <?php echo pagina_actual('/') ? 'navegacion__enlace--actual' : '' ?>">blog</a>
+            <a href="/blog" class="navegacion__enlace <?php echo pagina_actual('/blog') ? 'navegacion__enlace--actual' : '' ?>">blog</a>
             <a href="/tienda" class="navegacion__enlace <?php echo pagina_actual('/tienda') ? 'navegacion__enlace--actual' : '' ?>">tienda</a>
+            <a href="/contacto" class="navegacion__enlace <?php echo pagina_actual('/tienda') ? 'navegacion__enlace--actual' : '' ?>">contacto</a>
         </nav>
     </div>
 </div>
