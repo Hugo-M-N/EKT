@@ -1,0 +1,31 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bienvenida {
+    background-color: darken(v.$marron, 3);
+    margin: 3.5rem;
+    border-radius: 5rem;
+    color: v.$principal;
+    font-family: v.$fuente-secundaria;
+    padding: 3rem;
+
+    &__heading {
+        font-size: 3rem;
+        margin: 0 0 2rem 0;
+        text-align: center;
+
+        @include m.tablet {
+            @include m.texto-fluido(3rem, 8rem);
+        }
+        
+        
+    }
+
+    &__descripcion {
+        font-size: 3rem;
+        text-align: center;
+        @include m.tablet {
+            font-size: 2rem;
+        }
+    }
+}
