@@ -2,11 +2,11 @@
 @use 'base/mixins' as m;
 
 .bienvenida {
-    background-color: darken(v.$marron, 3);
+    background-color: v.$blanco;
     margin: 3.5rem;
     border-radius: 5rem;
-    color: v.$principal;
-    font-family: v.$fuente-secundaria;
+    color: v.$negro;
+    font-family: v.$fuente-principal;
     padding: 3rem;
 
     &__heading {
@@ -18,10 +18,10 @@
             @include m.texto-fluido(3rem, 8rem);
         }
         
-        
     }
 
     &__descripcion {
+        font-family: v.$fuente-secundaria;
         font-size: 3rem;
         text-align: center;
         @include m.tablet {

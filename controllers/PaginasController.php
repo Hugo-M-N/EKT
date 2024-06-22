@@ -18,4 +18,18 @@ class PaginasController {
             'titulo' => 'Página no encontrada'
         ]);
     }
+
+    public static function blog(Router $router) {
+
+        $router->render('paginas/blog', [
+            'titulo' => 'Blog',
+        ]);
+    }
+
+    public static function producto(Router $router) {
+
+        $router->render('paginas/producto', [
+            'titulo' => 'Producto',
+        ]);
+    }
 }

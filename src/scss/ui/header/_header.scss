@@ -3,7 +3,7 @@
 
 .header {
     min-height: 55rem;
-    background-image: linear-gradient(to right, rgba(0,0,0, 0.4), rgba(0,0,0, 0.4)),image-set(url(../img/velas02.avif) 1x, url(../img/velas02.webp) 1x, url(../img/velas02.png) 1x);
+    background-image: linear-gradient(to right, rgba(0,0,0, 0.4), rgba(0,0,0, 0.4)),image-set(url(../img/vela01.avif) 1x, url(../img/vela01.webp) 1x, url(../img/vela01.png) 1x);
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,7 +23,7 @@
     &__logo {
         font-size: 15rem;
         text-align: center;
-        color: v.$principal;
+        color: v.$negro;
         margin-bottom: 0;
         @include m.tablet {
             @include m.texto-fluido(15rem, 30rem);

@@ -7,23 +7,23 @@
 
 <section class="destacados">
     <h2 class="destacados__heading">
-        destacados
+        Best Sellers
     </h2>
     <div class="destacados__grid">
         <div class="destacados__producto">
             <img class="destacados__producto--imagen" src="build/img/velas01.png" alt="">
             <p class="destacados__producto--descripcion">Vela aromatica con olor a X / Tamaño X</p>
-            <a class="destacados__producto--boton" href="">Ver más</a>
+            <a class="destacados__producto--boton" href="">Comprar</a>
         </div>
         <div class="destacados__producto">
             <img class="destacados__producto--imagen" src="build/img/velas01.png" alt="">
             <p class="destacados__producto--descripcion">Vela aromatica con olor a X / Tamaño X</p>
-            <a class="destacados__producto--boton" href="">Ver más</a>
+            <a class="destacados__producto--boton" href="">Comprar</a>
         </div>
         <div class="destacados__producto">
             <img class="destacados__producto--imagen" src="build/img/velas01.png" alt="">
             <p class="destacados__producto--descripcion">Vela aromatica con olor a X / Tamaño X</p>
-            <a class="destacados__producto--boton" href="">Ver más</a>
+            <a class="destacados__producto--boton" href="">Comprar</a>
         </div>
     </div>
 </section>

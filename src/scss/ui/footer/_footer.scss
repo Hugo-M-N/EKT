@@ -2,9 +2,8 @@
 @use 'base/mixins' as m;
 
 .footer {
-    background-color: v.$verde;
     margin-top: 5rem;
-    color: v.$blanco;
+    color: v.$negro;
 
     &__grind {
         @include m.contenedor;
@@ -19,7 +18,7 @@
     }
     
     &__copyright {
-        background-color: darken(v.$verde, 5);
+        background-color: darken(v.$blanco, 5);
         margin: 3rem 0 0 0;
         padding: 1rem 0;
         text-align: center;

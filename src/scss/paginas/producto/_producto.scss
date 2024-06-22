@@ -1,0 +1,92 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.pagina-producto {
+    display: flex;
+    flex-direction: column;
+
+    @include m.tablet {
+        @include m.grid(2, 0);
+    }
+
+
+}
+
+.imagen-producto {
+    text-align: center;
+    background-color: red;
+    background-image: url(../img/vela01.avif);
+    height: 50rem;
+    width: 50rem;
+
+    @include m.desktop {
+        height: 70rem;
+    }
+
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.producto-menu {
+    padding: 4rem;
+
+    @include m.tablet {
+        height: 50rem;
+        overflow: scroll;
+    }
+
+    @include m.desktop {
+        height: 100rem;
+        overflow: scroll;
+    }
+
+    &__heading {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 2rem;
+
+        &--texto {
+            font-family: v.$fuente-secundaria;
+            font-size: 1.5rem;
+        }
+    }
+
+    &__opciones {
+
+        & ul {
+            list-style-type: none;
+            text-align: center;
+
+            & li {
+                margin: 0.5rem;
+                padding: 1rem;
+                border: 0.2rem solid v.$negro;
+                font-weight: v.$black;
+                font-size: 2rem;
+
+                @include m.tablet {
+                    font-size: 2.5rem;
+                }
+
+                &:hover {
+                    background-color: v.$negro;
+                    color: v.$blanco;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        & h3 {
+            text-align: center;
+            font-size: 3rem;
+            text-transform: uppercase;
+            font-weight: v.$black;
+        }
+
+    }
+
+}
+
+.relacionados {
+    text-align: center;
+}
