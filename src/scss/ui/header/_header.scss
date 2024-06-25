@@ -2,40 +2,54 @@
 @use 'base/mixins' as m;
 
 .header {
-    min-height: 55rem;
-    background-image: linear-gradient(to right, rgba(0,0,0, 0.4), rgba(0,0,0, 0.4)),image-set(url(../img/vela01.avif) 1x, url(../img/vela01.webp) 1x, url(../img/vela01.png) 1x);
 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    text-align: center;
 
-    &__contenedor {
-        @include m.contenedor;
-    }
-
-    &__contenido {
-        padding-top: 10rem;
-        @include m.tablet {
-            padding-top: 5rem;
-        }
+    & i {
+        font-size: 6rem;
+        margin: 0;
+        position: relative;
+        top: 20rem;
     }
 
     &__logo {
-        font-size: 15rem;
-        text-align: center;
-        color: v.$negro;
-        margin-bottom: 0;
-        @include m.tablet {
-            @include m.texto-fluido(15rem, 30rem);
+        margin: 0;
+        font-size: 12rem;
+        padding: 1rem;
+        position: relative;
+        top: 0rem;
+
+        & a {
+            color: v.$negro;
         }
     }
 
-    &__texto {
-        text-align: center;
-        color: v.$blanco;
-        margin: 0;
-        @include m.tablet {
-            @include m.texto-fluido(1rem, 2.2rem);
+    @include m.tablet {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        width: 12rem;
+
+        & i {
+            font-size: 3rem;
+            top: 0;
+            margin: 0 0 1rem 2rem;
+        }
+
+        &__logo {
+            font-size: 7rem;
+            margin-left: 1rem;
+
+        }
+    
+        &:hover {
+            .header-menu {
+                display: flex;
+                flex-direction: column;
+            }
         }
     }
+
+
 }

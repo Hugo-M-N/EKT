@@ -13,6 +13,7 @@
         include_once __DIR__ . '/templates/footer.php'
     ?>
 
-    <script src="/build/js/main.min.js" defer></script>
+<script src="https://kit.fontawesome.com/8e88dd41b7.js" crossorigin="anonymous"></script>
+<script src="/build/js/main.min.js" defer></script>
 </body>
 </html>

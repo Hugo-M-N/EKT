@@ -1,17 +1,27 @@
 <header class="header">
-    <div class="header__contenedor">
-        <nav class="header__navegacion">
-            <!-- Implementar Inicio de sesión, registro de usuario y verefidicación de administrador -->
-        </nav>
+    <i class="fa-sharp fa-solid fa-bars" id="menu-heading" ></i>
+    <h1 class="header__logo">
+        <a href="/">EKT</a>
+    </h1>
 
-        <div class="header__contenido">
-            <a href="/">
-                <h1 class="header__logo">
-                    EKT
-                </h1>
-            </a>
-
-            <p class="header__texto">Velas Aromaticas Artesanales</p>
+    <div class="header-menu" id="desplegable">
+        <div class="header-menu__heading">
+            <i class=" fa-sharp fa-solid fa-bars"></i>
+            <h1 class="header__logo">
+                <a href="/">EKT</a>
+            </h1>
+        </div>
+        <div class="header-menu__categorias">
+            <ul>
+                <li><a href="" class="categoria">Premium</a></li>
+                <li><a href="" class="categoria">Gourmet</a></li>
+                <li><a href="" class="categoria">Basic</a></li>
+                <li><a href="" class="categoria">Cera aromática</a></li>
+                <li><a href="" class="categoria">Kits de regalo</a></li>
+                <li><a href="" class="categoria">Complementos</a></li>
+                <li><a href="" class="categoria">Outlet</a></li>
+                <li><a href="" class="categoria">Eventos</a></li>
+            </ul>
         </div>
     </div>
 </header>

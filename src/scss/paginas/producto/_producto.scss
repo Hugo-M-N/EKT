@@ -16,11 +16,10 @@
     text-align: center;
     background-color: red;
     background-image: url(../img/vela01.avif);
-    height: 50rem;
-    width: 50rem;
+    height: 100vh;
 
     @include m.desktop {
-        height: 70rem;
+        height: 100vh;
     }
 
     background-repeat: no-repeat;

@@ -1,5 +1,9 @@
 // Fuentes
-$fuente-principal: times;
+@font-face {
+    font-family: "Maharlika";
+    src: url(../fonts/Maharlika-Regular.ttf);
+}
+$fuente-principal: 'Maharlika';
 $fuente-secundaria: tahoma;
 
 // Tamaño de Media Queries
@@ -13,7 +17,7 @@ $principal: #6b0992;
 
 $negro: #1a1b15;
 $blanco: #FFFFFF;
-$gris: #64748B;
+$gris: #8a8b8b;
 $gris-claro: #F8FAFC;
 $gris-oscuro: #1E293B;
 

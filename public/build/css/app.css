@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Maharlika";
+  src: url(../fonts/Maharlika-Regular.ttf);
+}
 /** Media Queries **/
 html {
   font-size: 62.5%;
@@ -10,7 +14,7 @@ html {
 }
 
 body {
-  font-family: times;
+  font-family: "Maharlika";
   font-size: 1.8rem;
 }
 
@@ -342,7 +346,7 @@ template {
   margin: 3.5rem;
   border-radius: 5rem;
   color: #1a1b15;
-  font-family: times;
+  font-family: "Maharlika";
   padding: 3rem;
 }
 .bienvenida__heading {
@@ -369,7 +373,7 @@ template {
 .destacados {
   background-color: #FFFFFF;
   border-radius: 5rem;
-  font-family: times;
+  font-family: "Maharlika";
   color: #1a1b15;
   margin: 3.5rem;
   padding: 3rem;
@@ -441,14 +445,13 @@ template {
   text-align: center;
   background-color: red;
   background-image: url(../img/vela01.avif);
-  height: 50rem;
-  width: 50rem;
+  height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
 }
 @media (min-width: 1024px) {
   .imagen-producto {
-    height: 70rem;
+    height: 100vh;
   }
 }
 
@@ -509,47 +512,125 @@ template {
 }
 
 .header {
-  min-height: 55rem;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), -webkit-image-set(url(../img/vela01.avif) 1x, url(../img/vela01.webp) 1x, url(../img/vela01.png) 1x);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), image-set(url(../img/vela01.avif) 1x, url(../img/vela01.webp) 1x, url(../img/vela01.png) 1x);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  text-align: center;
 }
-.header__contenedor {
-  width: min(95%, 140rem);
-  margin: 0 auto;
-}
-.header__contenido {
-  padding-top: 10rem;
-}
-@media (min-width: 768px) {
-  .header__contenido {
-    padding-top: 5rem;
-  }
+.header i {
+  font-size: 6rem;
+  margin: 0;
+  position: relative;
+  top: 20rem;
 }
 .header__logo {
-  font-size: 15rem;
-  text-align: center;
-  color: #1a1b15;
-  margin-bottom: 0;
-}
-@media (min-width: 768px) {
-  .header__logo {
-    font-size: clamp(15rem, -0.8rem + 10vw, 30rem);
-  }
-}
-.header__texto {
-  text-align: center;
-  color: #FFFFFF;
   margin: 0;
+  font-size: 12rem;
+  padding: 1rem;
+  position: relative;
+  top: 0rem;
+}
+.header__logo a {
+  color: #1a1b15;
 }
 @media (min-width: 768px) {
-  .header__texto {
-    font-size: clamp(1rem, -0.8rem + 10vw, 2.2rem);
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    width: 12rem;
+  }
+  .header i {
+    font-size: 3rem;
+    top: 0;
+    margin: 0 0 1rem 2rem;
+  }
+  .header__logo {
+    font-size: 7rem;
+    margin-left: 1rem;
+  }
+  .header:hover .header-menu {
+    display: flex;
+    flex-direction: column;
   }
 }
 
+.header-menu {
+  display: none;
+  background-color: #fcfcfc;
+  color: #1a1b15;
+}
+.header-menu__heading {
+  display: none;
+}
+.header-menu__categorias {
+  margin-top: 5rem;
+  padding: 2rem;
+}
+.header-menu__categorias ul {
+  padding: 0.7rem;
+}
+.header-menu__categorias li {
+  list-style: none;
+  padding-top: 1.5rem;
+}
+.header-menu__categorias .categoria {
+  font-size: 5rem;
+  color: #1a1b15;
+}
+@media (min-width: 768px) {
+  .header-menu {
+    position: absolute;
+    top: 0;
+    animation-name: slide-right;
+    animation-duration: 0.5s;
+    width: 30rem;
+    height: 100vh;
+  }
+  .header-menu__heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    width: 12rem;
+  }
+  .header-menu__categorias ul {
+    padding: 0.7rem;
+  }
+  .header-menu__categorias li {
+    list-style: none;
+    padding-top: 0.5rem;
+  }
+  .header-menu__categorias .categoria {
+    font-size: 3rem;
+    color: #1a1b15;
+  }
+  .header-menu__categorias .categoria:hover {
+    color: #8a8b8b;
+    animation-name: select;
+    animation-duration: 0.4s;
+    margin-left: 1rem;
+  }
+}
+
+.show {
+  display: block;
+}
+
+@keyframes slide-right {
+  from {
+    left: -30rem;
+  }
+  to {
+    left: 0;
+  }
+}
+@keyframes select {
+  from {
+    margin-left: 0;
+  }
+  to {
+    margin-left: 1rem;
+  }
+}
 .footer {
   margin-top: 5rem;
   color: #1a1b15;
