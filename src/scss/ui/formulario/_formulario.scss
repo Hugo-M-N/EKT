@@ -1,0 +1,46 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+    gap: 4rem;
+
+    &__campo {
+        display: flex;
+        width: 75%;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 2.5rem;
+    }
+
+    &__input {
+        border: none;
+        background-color: v.$negro;
+        color: v.$blanco;
+        padding: .5rem;
+
+        &::placeholder {
+            color: v.$blanco;
+        }
+    }
+
+    &__submit {
+        width: 40%;
+        border: none;
+        background-color: v.$negro;
+        color: v.$blanco;
+        font-size: 3.5rem;
+        padding: 1rem;
+        margin: 3.5rem auto;
+
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+
+}

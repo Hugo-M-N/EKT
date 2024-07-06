@@ -511,6 +511,20 @@ template {
   text-align: center;
 }
 
+.auth {
+  width: min(95%, 80rem);
+  margin: 0 auto;
+  align-content: center;
+}
+.auth__heading {
+  text-align: center;
+  font-size: 5rem;
+  margin: 10rem auto;
+}
+.auth__texto {
+  font-size: 2rem;
+}
+
 .header {
   text-align: center;
 }
@@ -518,10 +532,11 @@ template {
   font-size: 6rem;
   margin: 0;
   position: relative;
-  top: 20rem;
+  top: 23rem;
 }
 .header__logo {
   margin: 0;
+  margin-top: 3rem;
   font-size: 12rem;
   padding: 1rem;
   position: relative;
@@ -529,6 +544,42 @@ template {
 }
 .header__logo a {
   color: #1a1b15;
+}
+.header-session {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 2.5rem;
+  position: absolute;
+  margin: 0 auto;
+  padding: 1rem;
+  width: 100%;
+  top: 0;
+}
+.header-session a {
+  color: #1a1b15;
+  font-family: tahoma;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+  text-align: center;
+  border: none;
+}
+.header-session a:hover {
+  color: #FFFFFF;
+  background-color: #1a1b15;
+}
+.header__form input {
+  border: none;
+  font-size: 2.5rem;
+  font-family: tahoma;
+  background-color: #FFFFFF;
+  padding: 0.5rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+.header__form input:hover {
+  color: #FFFFFF;
+  background-color: #1a1b15;
 }
 @media (min-width: 768px) {
   .header {
@@ -546,6 +597,19 @@ template {
   .header__logo {
     font-size: 7rem;
     margin-left: 1rem;
+    margin-top: 0;
+  }
+  .header-session {
+    flex-direction: row;
+    position: absolute;
+    align-items: center;
+    text-align: right;
+    width: 35rem;
+    height: 10rem;
+    right: 0;
+  }
+  .header-session a {
+    width: 17rem;
   }
   .header:hover .header-menu {
     display: flex;
@@ -598,6 +662,7 @@ template {
   .header-menu__categorias li {
     list-style: none;
     padding-top: 0.5rem;
+    text-align: left;
   }
   .header-menu__categorias .categoria {
     font-size: 3rem;
@@ -670,5 +735,74 @@ template {
 .footer__copyright--texto {
   font-size: 1.5rem;
   font-weight: 400;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  text-align: center;
+  gap: 4rem;
+}
+.formulario__campo {
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2.5rem;
+}
+.formulario__input {
+  border: none;
+  background-color: #1a1b15;
+  color: #FFFFFF;
+  padding: 0.5rem;
+}
+.formulario__input::-moz-placeholder {
+  color: #FFFFFF;
+}
+.formulario__input::placeholder {
+  color: #FFFFFF;
+}
+.formulario__submit {
+  width: 40%;
+  border: none;
+  background-color: #1a1b15;
+  color: #FFFFFF;
+  font-size: 3.5rem;
+  padding: 1rem;
+  margin: 3.5rem auto;
+}
+.formulario__submit:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.acciones {
+  display: flex;
+  justify-content: space-between;
+  margin: 6rem auto;
+}
+.acciones__enlace {
+  color: #1a1b15;
+  text-decoration: underline;
+  padding: 1rem;
+}
+.acciones__enlace:hover {
+  background-color: #1a1b15;
+  color: #FFFFFF;
+}
+
+.alerta {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #1a1b15;
+  padding: 1rem;
+  color: #FFFFFF;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.alerta__error {
+  color: #CC0000;
 }
 /*# sourceMappingURL=app.css.map */

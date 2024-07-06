@@ -1,0 +1,16 @@
+@use 'base/mixins' as m;
+
+.auth {
+    @include m.contenedor-md;
+    align-content: center;
+
+    &__heading {
+        text-align: center;
+        font-size: 5rem;
+        margin: 10rem auto;
+    }
+
+    &__texto {
+        font-size: 2rem;
+    }
+}

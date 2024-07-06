@@ -1,5 +1,5 @@
 <header class="header">
-    <i class="fa-sharp fa-solid fa-bars" id="menu-heading" ></i>
+    <i class="fa-sharp fa-solid fa-bars" id="menu-heading"></i>
     <h1 class="header__logo">
         <a href="/">EKT</a>
     </h1>
@@ -25,3 +25,15 @@
         </div>
     </div>
 </header>
+<div class="header-session">
+    <?php if (is_auth()) { ?>
+        <a href="<?php echo is_admin() ? 'admin/dashboard' : '/perfil'; ?>"><?php echo is_admin() ? 'Administrar' : 'Perfil'; ?></a>
+        <form method="POST" action="/logout" class="header__form">
+            <input type="submit" value="Cerrar Sesión" class="header__submit">
+        </form>
+    <?php } else { ?>
+        <a href="/login">Iniciar sesión</a>
+        <a href="/registro">Registrarse</a>
+    <?php } ?>
+
+</div>

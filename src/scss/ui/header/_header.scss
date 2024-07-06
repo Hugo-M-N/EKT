@@ -9,11 +9,12 @@
         font-size: 6rem;
         margin: 0;
         position: relative;
-        top: 20rem;
+        top: 23rem;
     }
 
     &__logo {
         margin: 0;
+        margin-top: 3rem;
         font-size: 12rem;
         padding: 1rem;
         position: relative;
@@ -23,6 +24,51 @@
             color: v.$negro;
         }
     }
+
+    &-session {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 2.5rem;
+        position: absolute;
+        margin: 0 auto;
+        padding: 1rem;
+        width: 100%;
+        top: 0;
+
+        & a {
+            color: v.$negro;
+            font-family: v.$fuente-secundaria;
+            margin-bottom: 1.5rem;
+            padding: 0.5rem;
+            text-align: center;
+            border: none;
+
+            &:hover {
+                color: v.$blanco;
+                background-color: v.$negro;
+            }
+        }
+    }
+
+    &__form {
+        input {
+            border: none;
+            font-size: 2.5rem;
+            font-family: v.$fuente-secundaria;
+            background-color: v.$blanco;
+            padding: 0.5rem;
+            width: 100%;
+            margin-bottom: 1.5rem;
+
+            &:hover {
+                color: v.$blanco;
+                background-color: v.$negro;
+            }
+
+        }
+    }
+
 
     @include m.tablet {
         display: flex;
@@ -40,7 +86,22 @@
         &__logo {
             font-size: 7rem;
             margin-left: 1rem;
+            margin-top: 0;
 
+        }
+
+        &-session {
+            flex-direction: row;
+            position: absolute;
+            align-items: center;
+            text-align: right;
+            width: 35rem;
+            height: 10rem;
+            right: 0;
+
+            & a {
+                width: 17rem;
+            }
         }
     
         &:hover {
