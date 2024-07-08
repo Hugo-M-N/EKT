@@ -793,6 +793,15 @@ template {
   color: #FFFFFF;
 }
 
+.registro {
+  width: min(95%, 80rem);
+  margin: 0 auto;
+}
+.registro__heading {
+  text-align: center;
+  font-size: 5rem;
+}
+
 .alerta {
   text-align: center;
   text-transform: uppercase;

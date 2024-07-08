@@ -1,0 +1,12 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.registro {
+
+    @include m.contenedor-md;
+
+    &__heading {
+        text-align: center;
+        font-size: 5rem;
+    }
+}
