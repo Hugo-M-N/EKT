@@ -50,4 +50,36 @@ class Email {
         // Enviar mail
         $mail->send();
     }
+
+    public function enviarInstrucciones() {
+        // Crear objeto
+        $mail = new PHPMailer();
+        $mail->isSMTP();
+        $mail->Host = $_ENV['EMAIL_HOST'];
+        $mail->SMTPAuth = true;
+        $mail->Port = $_ENV['EMAIL_PORT'];
+        $mail->Username = $_ENV['EMAIL_USER'];
+        $mail->Password = $_ENV['EMAIL_PASS'];
+
+        $mail->setFrom('cuentas@EKT.com');
+        $mail->addAddress($this->email, $this->nombre);
+        $mail->Subject = 'Reestablece tu password';
+
+        // Cuerpo del correo
+        $mail->isHTML(TRUE);
+        $mail->CharSet = 'UTF-8';
+
+        $contenido = '<html>';
+        $contenido .= '<h1 class="logo">EKT</h1>';
+        $contenido .= '<h2>Reestablecer Password</h2>';
+        $contenido .= '<p>Hola ' . $this->nombre . ', has solicitado reestablecer tu password, si no has solicitado un cambio puedes ignorar el mensaje</p>';
+        $contenido .= '<a href="'. $_ENV['HOST'] . '/reestablecer?token=' . $this->token . '">Reestablecer Password</a>';
+        $contenido .= '<style>';
+        $contenido .= '</style>';
+        $contenido .= '</html>';
+        $mail->Body = $contenido;
+
+        // Enviar email
+        $mail->send();
+    }
 }
